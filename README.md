@@ -8,6 +8,22 @@ Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
+```bash
+npx degit sveltejs/template my-svelte-project
+cd my-svelte-project
+npm install
+npm run dev # -> http://localhost:5000
+```
+
+Try editing + saving src/App.svelte (app will auto-reload changes).
+
+Then when you're ready for production:
+
+```bash
+npm run build # -> bundle.js
+npm run start # -> http://localhost:5000
+```
+
 You can generate a [dependency graph](https://github.com/hchiam/learning-dependency-cruiser) with `bash show_dep_graph.sh`.
 
 This file was first created using the Yeoman generator [`generator-hchiam-learning`](https://www.npmjs.com/package/generator-hchiam-learning).
