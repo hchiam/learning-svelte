@@ -6,6 +6,8 @@ Svelte = less boilerplate and generate small files at build time instead of at r
 
 Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
+Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
+
 You can generate a [dependency graph](https://github.com/hchiam/learning-dependency-cruiser) with `bash show_dep_graph.sh`.
 
 This file was first created using the Yeoman generator [`generator-hchiam-learning`](https://www.npmjs.com/package/generator-hchiam-learning).
