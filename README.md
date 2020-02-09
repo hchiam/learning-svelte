@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-Svelte = less boilerplate and generate small files at build time instead of at run time. For me, it's like React in that it goes one step further in the trend: logically group together related JS, markup, [_and style_](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte).
+Svelte = Compiler! Less boilerplate and generate small files at build time instead of at run time. For me, it's like React in that it goes one step further in the trend: logically group together related JS, markup, [_and style_](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte).
 
 Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
