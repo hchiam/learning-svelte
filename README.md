@@ -20,6 +20,7 @@ Try editing + saving src/App.svelte (app will auto-reload changes).
 Then when you're ready for production:
 
 ```bash
+# cd my-svelte-project
 npm run build # -> bundle.js
 npm run start # -> http://localhost:5000
 ```
