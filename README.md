@@ -55,9 +55,3 @@ bash publish_live_site.sh
 ```
 
 <https://hchiam-svelte-youtube-tutorial-demo.surge.sh>
-
-## Other notes
-
-You can generate a [dependency graph](https://github.com/hchiam/learning-dependency-cruiser) with `bash show_dep_graph.sh`.
-
-This file was first created using the Yeoman generator [`generator-hchiam-learning`](https://www.npmjs.com/package/generator-hchiam-learning).
