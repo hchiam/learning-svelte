@@ -1,4 +1,4 @@
-# Learning svelte
+# Learning Svelte
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
@@ -24,6 +24,12 @@ Then when you're ready for production:
 npm run build # -> bundle.js
 npm run start # -> http://localhost:5000
 ```
+
+## YouTube tutorial
+
+From DesignCourse: <https://www.youtube.com/watch?v=BZzBtzl6aq4>
+
+## Other notes
 
 You can generate a [dependency graph](https://github.com/hchiam/learning-dependency-cruiser) with `bash show_dep_graph.sh`.
 
