@@ -8,7 +8,9 @@ Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
 Try out editable demos like this: <https://svelte.dev/examples#spread-props>
 
-Template: <https://github.com/sveltejs/template>
+App template: <https://github.com/sveltejs/template>
+
+Component template: <https://github.com/sveltejs/component-template>
 
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
