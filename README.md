@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-Svelte = Compiler! Less boilerplate and generate small files at build time instead of at run time. For me, it's like React in that it goes one step further in the trend: logically group together related JS, markup, [_and style_](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte) (optionally, but scoped by default).
+Svelte = Compiler! Less boilerplate and generate small files at build time instead of at run time. It also does _*not*_ ship a runtime (a thing that knows how to run your framework-targeted code) alongside your code that you send to the browser, which other frameworks do. For me, it's like React in that it goes one step further in the trend: logically group together related JS, markup, [_and style_](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte) (optionally, but scoped by default).
 
 Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
