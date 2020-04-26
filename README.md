@@ -12,6 +12,8 @@ App template: <https://github.com/sveltejs/template>
 
 Component template: <https://github.com/sveltejs/component-template>
 
+Webpack template (instead of rollup default): <https://github.com/sveltejs/template-webpack>
+
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
 ```bash
