@@ -16,16 +16,15 @@ body {
 }
 
 a {
-  color: rgb(0, 100, 200);
-  text-decoration: none;
+  color: lightgreen;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: lime;
 }
 
 a:visited {
-  color: rgb(0, 80, 160);
+  color: green;
 }
 
 label {

@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "run-p dev:server dev:client # dev was just: rollup -c -w",
+    "dev:server": "json-server --watch db.json",
+    "dev:client": "rollup -c -w",
     "start": "sirv public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "json-server": "^0.16.1",
+    "npm-run-all": "^4.1.5",
     "rollup": "^1.20.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",

@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "A great book",
+      "description": "A description of a great book.",
+      "favorite": true
+    },
+    {
+      "id": 2,
+      "title": "Better book",
+      "description": "This one's a better book.",
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "title": "Cool cook book",
+      "description": "Cook cool food quick. Cool!",
+      "favorite": false
+    }
+  ]
+}

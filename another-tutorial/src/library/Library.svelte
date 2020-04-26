@@ -2,26 +2,21 @@
   import BookGrid from "./BookGrid.svelte";
   import Button from "../common/Button.svelte";
 
-  const books = [
-    {
-      id: 1,
-      title: "A great book",
-      description: "A description of a great book.",
-      favorite: true
-    },
-    {
-      id: 2,
-      title: "Better book",
-      description: "This one's a better book.",
-      favorite: false
-    },
-    {
-      id: 3,
-      title: "Cool cook book",
-      description: "Cook cool food quick. Cool!",
-      favorite: false
-    }
-  ];
+  import { httpGet } from "../common/api.js";
+  let books = [];
+  onMount(async function() {
+    const { data } = await httpGet("/?_sort=id&_order=desc");
+    books = data;
+  });
+
+  // fetch example:
+  import { onMount } from "svelte";
+  let data = [];
+  onMount(async function() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const json = await response.json();
+    data = json;
+  });
 </script>
 
 <style>
@@ -44,3 +39,11 @@
 <Button>+ Add book</Button>
 
 <BookGrid {books} />
+
+<p>
+  First result from
+  <a href="https://jsonplaceholder.typicode.com/posts" target="_blank">
+    https://jsonplaceholder.typicode.com/posts
+  </a>
+  : {JSON.stringify(data[0])}
+</p>
