@@ -8,7 +8,7 @@ Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
 Try out editable demos like this: <https://svelte.dev/examples#spread-props>
 
-App template: <https://github.com/sveltejs/template>
+App template: <https://github.com/sveltejs/template> (hence `sveltejs/template` in the CLI commands below to get the latest template code)
 
 Component template: <https://github.com/sveltejs/component-template>
 
@@ -17,6 +17,7 @@ Webpack template (instead of rollup default): <https://github.com/sveltejs/templ
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
 ```bash
+# npx degit github-repo-name name-of-folder-to-create
 npx degit sveltejs/template my-svelte-project
 cd my-svelte-project
 npm install
