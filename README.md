@@ -34,6 +34,10 @@ npm run build # -> bundle.js
 npm run start # -> http://localhost:5000
 ```
 
+`rollup.config.js` -> `main.js` -> `App.svelte` -> ...
+
+`src/` (files to be compiled) -> `public/` (files already compiled or don't need to compile)
+
 ## [My take on a YouTube tutorial](https://github.com/hchiam/learning-svelte/tree/master/youtube-tutorial)
 
 From DesignCourse: <https://www.youtube.com/watch?v=BZzBtzl6aq4> (Note: this video is at least a year old now. Instead of `svero`, I'm using [`svelte-routing`](https://github.com/EmilTholin/svelte-routing): <https://www.youtube.com/watch?v=P1hxkpf8kCA>)
