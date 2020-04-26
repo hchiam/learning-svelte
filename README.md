@@ -6,6 +6,8 @@ Svelte = Compiler! Less boilerplate and generate small files at build time inste
 
 Learn from the interactive tutorial: <https://svelte.dev/tutorial>
 
+Try out editable demos like this: <https://svelte.dev/examples#spread-props>
+
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
 ```bash
