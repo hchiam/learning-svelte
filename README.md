@@ -38,6 +38,27 @@ npm run start # -> http://localhost:5000
 
 `src/` (files to be compiled) -> `public/` (files already compiled or don't need to compile)
 
+## Svelte useful built-ins
+
+```js
+// onMount:
+import { onMount } from "svelte";
+let data = [];
+onMount(async function () {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const json = await response.json();
+  data = json;
+});
+```
+
+```js
+// createEventDispatcher:
+import { createEventDispatcher } from "svelte";
+const dispatch = createEventDispatcher();
+```
+
+Custom event listener format: `<TagName on:custom-event />` and `{() => dispatch('custom-event', { someData: something.someValue })}` (dispatching component events is more idiomatic to Svelte than using callbacks between parent and children).
+
 ## Svelte life cycle methods reference
 
 - `onMount` (most commonly-used, happens right after element is first rendered into DOM)
