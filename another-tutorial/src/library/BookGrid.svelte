@@ -17,6 +17,11 @@
     color: white;
     padding: 1rem;
   }
+  li:hover {
+    transform: skewY(-10deg);
+    transform-origin: 0 100%;
+    transition: 0.25s;
+  }
 </style>
 
 <ul>
