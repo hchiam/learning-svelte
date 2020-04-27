@@ -16,6 +16,8 @@ Webpack template (instead of rollup default): <https://github.com/sveltejs/templ
 
 Setup tutorial: <https://svelte.dev/blog/svelte-for-new-developers>
 
+YGLF talk: <https://www.youtube.com/watch?v=AdNJ3fydeao>
+
 ```bash
 # npx degit github-repo-name name-of-folder-to-create
 npx degit sveltejs/template my-svelte-project
