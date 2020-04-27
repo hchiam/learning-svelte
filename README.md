@@ -38,6 +38,8 @@ npm run start # -> http://localhost:5000
 
 `src/` (files to be compiled) -> `public/` (files already compiled or don't need to compile)
 
+You might be interested in [Sapper](https://github.com/hchiam/learning-sapper), a web app dev framework powered by Svelte.
+
 ## Svelte useful built-ins
 
 ```js
