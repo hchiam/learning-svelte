@@ -18,7 +18,7 @@
     data = json;
   });
 
-  export let onClick;
+  export let onBookSelect;
 </script>
 
 <style>
@@ -40,7 +40,7 @@
 
 <Button>+ Add book</Button>
 
-<BookGrid {books} {onClick} />
+<BookGrid {books} {onBookSelect} />
 
 <p>
   First result from
