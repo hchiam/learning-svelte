@@ -41,6 +41,15 @@ npm run start # -> http://localhost:5000
 ## Svelte useful built-ins
 
 ```js
+// Svelte makes use JavaScript's built-in label to make reactive variables and function calls:
+let a = 1;
+$: b = 2;
+a = 3; // b = 4
+// it's not only limited to declarations, you can also have arbitrary statements:
+$: console.log("b is now: " + b); // good for debugging changing values
+```
+
+```js
 // onMount:
 import { onMount } from "svelte";
 let data = [];
