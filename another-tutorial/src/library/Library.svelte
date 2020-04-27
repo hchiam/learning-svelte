@@ -17,8 +17,6 @@
     const json = await response.json();
     data = json;
   });
-
-  export let onBookSelect;
 </script>
 
 <style>
@@ -40,7 +38,7 @@
 
 <Button>+ Add book</Button>
 
-<BookGrid {books} {onBookSelect} />
+<BookGrid {books} on:book-select />
 
 <p>
   First result from
