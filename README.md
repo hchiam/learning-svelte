@@ -38,6 +38,14 @@ npm run start # -> http://localhost:5000
 
 `src/` (files to be compiled) -> `public/` (files already compiled or don't need to compile)
 
+## Svelte life cycle methods reference
+
+- `onMount` (most commonly-used, happens right after element is first rendered into DOM)
+- `onDestroy`
+- `beforeUpdate`
+- `afterUpdate`
+- `tick`
+
 ## [My take on a YouTube tutorial](https://github.com/hchiam/learning-svelte/tree/master/youtube-tutorial)
 
 From DesignCourse: <https://www.youtube.com/watch?v=BZzBtzl6aq4> (Note: this video is at least a year old now. Instead of `svero`, I'm using [`svelte-routing`](https://github.com/EmilTholin/svelte-routing): <https://www.youtube.com/watch?v=P1hxkpf8kCA>)

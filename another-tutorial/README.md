@@ -2,6 +2,16 @@
 
 Pluralsight tutorial: <https://github.com/jaketrent/svelte-getting-started>
 
+`json-server`, `npm-run-all`
+
+```json
+{
+  "dev": "run-p dev:server dev:client # dev was just: rollup -c -w",
+  "dev:server": "json-server --watch db.json",
+  "dev:client": "rollup -c -w"
+}
+```
+
 (Auto-generated notes are below:)
 
 ---
