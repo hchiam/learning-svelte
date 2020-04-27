@@ -17,6 +17,8 @@
     const json = await response.json();
     data = json;
   });
+
+  export let onClick;
 </script>
 
 <style>
@@ -38,7 +40,7 @@
 
 <Button>+ Add book</Button>
 
-<BookGrid {books} />
+<BookGrid {books} {onClick} />
 
 <p>
   First result from

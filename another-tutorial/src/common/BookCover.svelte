@@ -1,12 +1,9 @@
 <script>
   export let book = {};
+  export let onClick;
 
   function isValidUrl(url) {
     return url && /http.+\.(jpg|png|gif)$/.test(url);
-  }
-
-  function handleClick(id) {
-    alert(id);
   }
 </script>
 
@@ -33,7 +30,7 @@
   }
 </style>
 
-<a href="#" class="book" on:click={() => handleClick(book.id)}>
+<a href="#" class="book" on:click={() => onClick(book.id)}>
   <span
     class="cover"
     style={isValidUrl(book.cover) ? `background-image: url(${book.cover})` : ''}>
