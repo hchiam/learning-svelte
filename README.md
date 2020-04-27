@@ -78,6 +78,26 @@ Custom event listener format: `<TagName on:custom-event />` and `{() => dispatch
 - `afterUpdate`
 - `tick`
 
+## Svelte transitions
+
+```html
+<script>
+  import { fade, fly } from "svelte/transition";
+  let visible = true;
+</script>
+
+<label>
+  <input type="checkbox" bind:checked="{visible}" />
+  visible
+</label>
+
+{#if visible}
+<p transition:fly="{{y:250}}">
+  Transition!
+</p>
+{/if}
+```
+
 ## [My take on a YouTube tutorial](https://github.com/hchiam/learning-svelte/tree/master/youtube-tutorial)
 
 From DesignCourse: <https://www.youtube.com/watch?v=BZzBtzl6aq4> (Note: this video is at least a year old now. Instead of `svero`, I'm using [`svelte-routing`](https://github.com/EmilTholin/svelte-routing): <https://www.youtube.com/watch?v=P1hxkpf8kCA>)
