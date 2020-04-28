@@ -8,6 +8,10 @@
   }
   div {
     transform: rotate(45deg);
+    z-index: 1;
+    position: relative;
+    top: -1.25rem;
+    left: 1rem;
   }
   div:before,
   div:after {

@@ -2,8 +2,8 @@
   import Detail from "./detail/Detail.svelte";
   import Library from "./library/Library.svelte";
 
-  let page = "library";
-  let pageArguments = {};
+  let page = "detail";
+  let pageArguments = { id: 1 };
   function handleBookSelect(event) {
     page = "detail";
     pageArguments = event.detail; // detail is specific to using svelte's createEventDispatcher()

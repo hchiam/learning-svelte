@@ -12,22 +12,12 @@
     gap: 10px;
     list-style: none;
   }
-  li {
-    background: maroon;
-    color: white;
-    padding: 1rem;
-  }
-  li:hover {
-    transform: skewY(-10deg);
-    transform-origin: 0 100%;
-    transition: 0.25s;
-  }
 </style>
 
 <ul>
   {#each books as book}
     <li>
-      <BookCover {book} on:book-select />
+      <BookCover interactive {book} on:book-select />
       {#if book.favorite}
         <Heart />
       {/if}
