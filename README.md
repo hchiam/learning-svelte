@@ -196,3 +196,26 @@ Example:
   ...
 </form>
 ```
+
+### More to learn
+
+- stores with [`svelte/store`](https://svelte.dev/tutorial/writable-stores)
+- `svelte:*` elements like [`<svelte:head>`](https://svelte.dev/tutorial/svelte-head)
+- [`#await`](https://svelte.dev/tutorial/await-blocks)
+- [`@html`](https://svelte.dev/tutorial/html-tags)
+- [`@debug`](https://svelte.dev/tutorial/debug)
+- SSR
+- `svelte/animation`, `tween`
+- events and event modifiers
+- actions
+- reactivity
+- slots
+- life cycle events
+- libraries
+- tooling
+- testing
+- pre-processing assets
+- production builds
+- deployment
+
+Or just make an app you want using [Sapper](https://github.com/hchiam/learning-sapper), while referring to the interactive tutorials/examples/docs for quick reference/refreshers.
