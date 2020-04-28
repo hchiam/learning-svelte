@@ -205,7 +205,8 @@ Example:
 - [`@html`](https://svelte.dev/tutorial/html-tags)
 - [`@debug`](https://svelte.dev/tutorial/debug)
 - SSR
-- `svelte/animation`, `tween`
+- [`svelte/animate`, `svelte/transition`, `svelte/easing`](https://svelte.dev/tutorial/animate)
+- [`tweened` from `svelte/motion`](https://svelte.dev/tutorial/tweened)
 - events and event modifiers
 - actions
 - reactivity
