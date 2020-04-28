@@ -10,7 +10,7 @@
   export let interactive = false;
 
   function isValidUrl(url) {
-    return url && /http.+\.(jpg|png|gif)$/.test(url);
+    return url && url !== "" && /http.+\.(jpg|png|gif)$/.test(url);
   }
 </script>
 
@@ -20,6 +20,11 @@
     background: maroon;
     color: white;
     padding: 1rem;
+  }
+
+  .book,
+  .cover {
+    min-height: 100px;
   }
 
   .title,
@@ -45,22 +50,24 @@
 
 {#if interactive}
   <div id="flips">
-    <a href={'/books/' + book.id} use:links class="book">
+    <a
+      href={'/books/' + book.id}
+      use:links
+      class="book"
+      style={isValidUrl(book.coverUrl) ? `background-image: url(${book.coverUrl})` : ''}>
       <!-- svelte-routing replaces the need for: on:click={() => dispatch('book-select', { id: book.id })} 
       so you can do this instead: href={'/books/' + book.id} use:links -->
-      <span
-        class="cover"
-        style={isValidUrl(book.cover) ? `background-image: url(${book.cover})` : ''}>
+      <span class="cover">
         <span class="title">{book.title || ''}</span>
         <span class="description">{book.description || ''}</span>
       </span>
     </a>
   </div>
 {:else}
-  <div class="book" on:click={() => dispatch('book-select', { id: book.id })}>
-    <span
-      class="cover"
-      style={isValidUrl(book.cover) ? `background-image: url(${book.cover})` : ''}>
+  <div
+    class="book"
+    style={isValidUrl(book.coverUrl) ? `background-image: url(${book.coverUrl})` : ''}>
+    <span class="cover">
       <span class="title">{book.title || ''}</span>
       <span class="description">{book.description || ''}</span>
     </span>

@@ -17,6 +17,22 @@
       "title": "Cool cook book",
       "description": "Cook cool food quick. Cool!",
       "favorite": false
+    },
+    {
+      "title": "Delightful new book",
+      "author": "",
+      "coverUrl": "",
+      "description": "This book was created using the form!",
+      "favorite": true,
+      "id": 4
+    },
+    {
+      "title": "Extra book",
+      "author": "",
+      "coverUrl": "",
+      "description": "I created an extra book",
+      "favorite": true,
+      "id": 5
     }
   ]
 }

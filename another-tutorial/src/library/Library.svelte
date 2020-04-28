@@ -36,7 +36,7 @@
   ullam blanditiis facilis neque possimus tempore sit?
 </p>
 
-<Button>+ Add book</Button>
+<Button to="/create">+ Add book</Button>
 
 <BookGrid {books} />
 

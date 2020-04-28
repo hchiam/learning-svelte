@@ -51,6 +51,8 @@ $: b = 2;
 a = 3; // b = 4
 // it's not only limited to declarations, you can also have arbitrary statements:
 $: console.log("b is now: " + b); // good for debugging changing values
+// or this native ES6 shorthand:
+$: console.log({ b });
 ```
 
 ```js
@@ -181,4 +183,16 @@ So you can do things like:
 
 ```html
 <button>+ Add book</button>
+```
+
+### Event modifiers
+
+`on:event-name|modifier={handle}`
+
+Example:
+
+```html
+<form on:submit|preventDefault="{handleSubmit}">
+  ...
+</form>
 ```

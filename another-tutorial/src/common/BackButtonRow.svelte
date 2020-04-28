@@ -10,7 +10,6 @@
   }
   .text {
     margin-left: 1rem;
-    padding-bottom: 0.5rem;
   }
   span {
     font-weight: bold;
