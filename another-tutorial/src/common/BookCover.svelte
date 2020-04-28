@@ -1,10 +1,13 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  // // svelte-routing replaces the need for:
+  // import { createEventDispatcher } from "svelte";
+  // const dispatch = createEventDispatcher();
+
+  // Use svelte-routing's links to make it aware of the <a> tag below by using a use:links action function
+  import { links } from "svelte-routing";
 
   export let book = {};
   export let interactive = false;
-
-  const dispatch = createEventDispatcher();
 
   function isValidUrl(url) {
     return url && /http.+\.(jpg|png|gif)$/.test(url);
@@ -42,10 +45,9 @@
 
 {#if interactive}
   <div id="flips">
-    <a
-      href="#"
-      class="book"
-      on:click={() => dispatch('book-select', { id: book.id })}>
+    <a href={'/books/' + book.id} use:links class="book">
+      <!-- svelte-routing replaces the need for: on:click={() => dispatch('book-select', { id: book.id })} 
+      so you can do this instead: href={'/books/' + book.id} use:links -->
       <span
         class="cover"
         style={isValidUrl(book.cover) ? `background-image: url(${book.cover})` : ''}>

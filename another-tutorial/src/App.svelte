@@ -1,24 +1,22 @@
 <script>
+  import { Route, Router } from "svelte-routing";
   import Detail from "./detail/Detail.svelte";
   import Library from "./library/Library.svelte";
 
-  let page = "detail";
-  let pageArguments = { id: 1 };
-  function handleBookSelect(event) {
-    page = "detail";
-    pageArguments = event.detail; // detail is specific to using svelte's createEventDispatcher()
-    console.log(pageArguments);
-  }
+  export let url = "";
 </script>
 
-<style>
+<Router {url}>
+  <main>
 
-</style>
+    <!-- Route lets you use let:params -> so :id becomes params.id -->
+    <Route path="/books/:id" let:params>
+      <Detail id={params.id} />
+    </Route>
 
-<main>
-  {#if page === 'detail'}
-    <Detail {...pageArguments} />
-  {:else}
-    <Library on:book-select={handleBookSelect} />
-  {/if}
-</main>
+    <Route path="/">
+      <Library />
+    </Route>
+
+  </main>
+</Router>

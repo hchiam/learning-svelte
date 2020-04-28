@@ -2,15 +2,21 @@
 
 Pluralsight tutorial: <https://github.com/jaketrent/svelte-getting-started>
 
-`json-server`, `npm-run-all`
+`json-server`, `npm-run-all`, `svelte-routing`
 
 ```json
 {
+  "build": "rollup -c",
   "dev": "run-p dev:server dev:client # dev was just: rollup -c -w",
   "dev:server": "json-server --watch db.json",
-  "dev:client": "rollup -c -w"
+  "dev:client": "rollup -c -w",
+  "start": "sirv public --single"
 }
 ```
+
+<http://localhost:5000>
+
+Note that the data in the `db.json` file actually changes when you hit "Favorite/Unfavorite".
 
 (Auto-generated notes are below:)
 

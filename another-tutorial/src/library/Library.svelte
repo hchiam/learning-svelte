@@ -38,7 +38,7 @@
 
 <Button>+ Add book</Button>
 
-<BookGrid {books} on:book-select />
+<BookGrid {books} />
 
 <p>
   First result from
