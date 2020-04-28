@@ -133,14 +133,56 @@ bash publish_live_site.sh
 
 ## Pluralsight tutorial: <https://github.com/jaketrent/svelte-getting-started>
 
-`json-server`, `npm-run-all`
+`json-server`, `npm-run-all`, `svelte-routing`
 
 ```json
 {
+  "build": "rollup -c",
   "dev": "run-p dev:server dev:client # dev was just: rollup -c -w",
   "dev:server": "json-server --watch db.json",
-  "dev:client": "rollup -c -w"
+  "dev:client": "rollup -c -w",
+  "start": "sirv public --single"
 }
 ```
 
 Note that the data in the `db.json` file actually changes when you hit "Favorite/Unfavorite".
+
+<http://localhost:5000>
+
+### Routing: `svelte-routing`, `let:params`, `use:links`
+
+- ```js
+  import { Route, Router } from "svelte-routing";
+  import { links } from "svelte-routing";`;
+  ```
+
+- ```html
+  <Route path="/books/:id" let:params>
+    <Detail id="{params.id}" />
+  </Route>
+  ```
+
+- ```html
+  <a href={"/books/" + book.id} use:links></a>
+  ```
+
+- `sirv public --single` (see package.json)
+
+### Slot
+
+```html
+<button on:click={() => clicks++}>
+  <!-- slot is actually native HTML! -->
+  <slot />
+</button>
+```
+
+So you can do things like:
+
+```html
+<button>+ Add book</button>
+```
+
+```
+
+```
