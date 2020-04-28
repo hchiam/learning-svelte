@@ -182,7 +182,3 @@ So you can do things like:
 ```html
 <button>+ Add book</button>
 ```
-
-```
-
-```
