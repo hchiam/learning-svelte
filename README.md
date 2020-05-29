@@ -220,3 +220,5 @@ Example:
 - deployment
 
 Or just make an app you want using [Sapper](https://github.com/hchiam/learning-sapper), while referring to the interactive tutorials/examples/docs for quick reference/refreshers.
+
+Or try out a [RealWorld spec app](https://github.com/sveltejs/realworld).
