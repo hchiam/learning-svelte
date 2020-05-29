@@ -221,4 +221,4 @@ Example:
 
 Or just make an app you want using [Sapper](https://github.com/hchiam/learning-sapper), while referring to the interactive tutorials/examples/docs for quick reference/refreshers.
 
-Or try out a [RealWorld spec app](https://github.com/sveltejs/realworld).
+Or try out a [RealWorld spec app](https://github.com/sveltejs/realworld). Auth is [included](https://github.com/sveltejs/realworld/blob/c4f895c02f2ac583dc0cc4874f4def4414f71679/src/routes/auth/login.js#L6) in the [example](https://github.com/sveltejs/realworld/blob/c12fc0f1286121c211cf5f4f37ddedef3d69d0db/src/routes/login/index.svelte#L13).
