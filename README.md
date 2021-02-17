@@ -42,6 +42,12 @@ npm run start # -> http://localhost:5000
 
 You might be interested in [Sapper](https://github.com/hchiam/learning-sapper), a web app dev framework powered by Svelte.
 
+## Examples
+
+https://github.com/hchiam/code-inspiration --> https://code-inspiration.surge.sh
+
+https://github.com/hchiam/random-group-generator --> https://random-group-generator.surge.sh/
+
 ## Svelte useful built-ins
 
 ```js
