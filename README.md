@@ -1,6 +1,6 @@
 # Learning Svelte
 
-Just one of the things I'm learning. <https://github.com/hchiam/learning>
+Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
 Svelte = Compiler! Less boilerplate and generate small files at build time instead of at run time. It also does _*not*_ ship a runtime (a thing that knows how to run your framework-targeted code) alongside your code that you send to the browser, which other frameworks do. For me, it's like React in that it goes one step further in the trend: logically group together related JS, markup, [_and style_](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte) (optionally, but scoped by default). It's performant and productive.
 
@@ -102,9 +102,7 @@ Custom event listener format: `<TagName on:custom-event />` and `{() => dispatch
 </label>
 
 {#if visible}
-<p transition:fly="{{y:250}}">
-  Transition!
-</p>
+<p transition:fly="{{y:250}}">Transition!</p>
 {/if}
 ```
 
@@ -198,9 +196,7 @@ So you can do things like:
 Example:
 
 ```html
-<form on:submit|preventDefault="{handleSubmit}">
-  ...
-</form>
+<form on:submit|preventDefault="{handleSubmit}">...</form>
 ```
 
 ### More to learn
