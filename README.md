@@ -199,6 +199,12 @@ Example:
 <form on:submit|preventDefault="{handleSubmit}">...</form>
 ```
 
+### Reactivity nuance notes
+
+[@colah](https://github.com/colah)'s explanation <https://github.com/sveltejs/svelte/pull/6641>
+
+Live demo: <https://svelte.dev/repl/f6f2d3879e2140a0a09cbff5b057c103?version=3.42.1>
+
 ### More to learn
 
 - stores with [`svelte/store`](https://svelte.dev/tutorial/writable-stores)
