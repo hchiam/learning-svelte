@@ -42,6 +42,10 @@ npm run start # -> http://localhost:5000
 
 You might be interested in [Sapper](https://github.com/hchiam/learning-sapper), a web app dev framework powered by Svelte.
 
+## Update: Runes!
+
+fireship 4m18s: why runes and the 4 runes you need to know: https://www.youtube.com/watch?v=aYyZUDFZTrM
+
 ## Examples
 
 https://github.com/hchiam/code-inspiration --> https://code-inspiration.surge.sh
